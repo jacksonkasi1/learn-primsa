@@ -12,11 +12,17 @@ datasource db {
 }
 
 model Author {
-  id    Int     @id @default(autoincrement())
-  name  String
-  email String  @unique
+  id         Int      @id @default(autoincrement())
+  name       String
+  user_name  String
+  email      String   @unique
   // books Books[]
-  books Books[] @relation(name: "AuthorHasBooks")
+  books      Books[]  @relation(name: "AuthorHasBooks")
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  // index for email & user_name
+  @@index([email, user_name], name: "email_user_name")
 }
 
 model Books {

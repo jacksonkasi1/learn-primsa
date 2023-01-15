@@ -8,5 +8,5 @@
       "@/config": ["./src/config"],
       "@/middleware": ["./src/middleware/*"]
     }
-  },
+  }
 }
