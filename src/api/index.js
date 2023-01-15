@@ -1,5 +1,17 @@
-const route  = require('express').Router()
+const route = require("express").Router()
 
-const {} = require('../controllers/author')
+const { getAllauthors } = require("../controllers/author")
 
-route.post("/d")
+route.get("/", (req, res) => {
+  res.send("server working fine!")
+})
+
+route.get("/test-error", (req, res, next) => {
+  const error = new Error("This is a test error")
+  error.status = 400
+  next(error)
+})
+
+route.get("/get-authors", getAllauthors)
+
+module.exports = route

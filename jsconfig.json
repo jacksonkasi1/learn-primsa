@@ -4,9 +4,9 @@
     "module": "commonjs",
     "target": "es6",
     "paths": {
-      "@/utils": ["./src/utils"],
-      "@config": ["./src/config"]
+      "@/utils": ["./src/utils/*"],
+      "@/config": ["./src/config"],
+      "@/middleware": ["./src/middleware/*"]
     }
   },
-  "include": ["src/*"]
 }
