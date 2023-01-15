@@ -1,10 +1,7 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
-const ea = require('events')
-
-
-
+const ea = require('events');
 
 // getAllauthors
 module.exports.getAllauthors = async () => {
