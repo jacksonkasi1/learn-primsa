@@ -1,0 +1,96 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\jacks\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\jacks\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\jacks\bin;C:\Python310\Scripts;C:\Python310;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet;C:\Program Files\Amazon\AWSCLIV2;C:\Users\jacks\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files\Amazon\AWSSAMCLI\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\jacks\AppData\Local\Volta\bin;C:\Users\jacks\AppData\Local\Microsoft\WindowsApps;C:\Users\jacks\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jacks\AppData\Roaming\npm;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\heroku\bin;C:\Users\jacks\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\jacks\AppData\Local\gitkraken\bin;C:\tools\mysql\current\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\jacks\AppData\Local\Yarn\Cache\v6\npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009-integrity\node_modules\ms\index.js' -> 'D:\WORKSPACE\TEST_WORKS\ORM\learn-primsa\node_modules\@eslint\eslintrc\node_modules\ms\index.js'
+
+npm manifest: 
+  {
+    "name": "learn-primsa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "cross-env NODE_ENV=production node server.js",
+      "dev": "cross-env NODE_ENV=development nodemon server.js",
+      "deploy": "sls deploy",
+      "prettier": "prettier --write .",
+      "lint": "eslint --ext .js,.ts .",
+      "lint-fix": "npx eslint src --fix --cache",
+      "prepare": "husky install"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*": "prettier --write ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jacksonkasi1/learn-primsa.git"
+    },
+    "keywords": [],
+    "author": "jackson kasi",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jacksonkasi1/learn-primsa/issues"
+    },
+    "homepage": "https://github.com/jacksonkasi1/learn-primsa#readme",
+    "dependencies": {
+      "@prisma/client": "^4.8.1",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "eslint-config-prettier": "^8.6.0",
+      "express": "^4.18.2",
+      "http-status-codes": "^2.2.0",
+      "module-alias": "^2.2.2",
+      "serverless-http": "^3.1.1",
+      "youch": "^3.2.2",
+      "youch-terminal": "^2.1.5"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "eslint": "^8.32.0",
+      "eslint-config-standard": "^17.0.0",
+      "eslint-plugin-import": "^2.25.2",
+      "eslint-plugin-n": "^15.0.0",
+      "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
+      "eslint-plugin-prettier": "^4.2.1",
+      "eslint-plugin-promise": "^6.0.0",
+      "eslint-plugin-scanjs-rules": "^0.2.1",
+      "eslint-plugin-security": "^1.6.0",
+      "husky": "^8.0.0",
+      "nodemon": "^2.0.20",
+      "prettier": "^2.8.3",
+      "prisma": "^4.8.1"
+    },
+    "_moduleAliases": {
+      "@/root": ".",
+      "@/config": "src/config",
+      "@/utils": "src/utils",
+      "@/auth": "src/middleware/auth.js",
+      "@/middleware": "src/middleware"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

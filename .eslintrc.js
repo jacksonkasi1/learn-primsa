@@ -11,6 +11,7 @@ module.exports = {
     extends: ['standard', 'prettier'],
     plugins: ['prettier'],
     rules: {
+        // 'no-console': 'error',
         'no-unused-vars': 'error',
         semi: ['error', 'always'],
         quotes: ['error', 'single'],
@@ -20,5 +21,6 @@ module.exports = {
         'no-trailing-spaces': 'error',
         'no-undef': 'error',
         'no-extra-semi': 'error',
+        // 'prettier/prettier': 'error',
     },
 };
