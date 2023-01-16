@@ -32,3 +32,8 @@ model Books {
   // author   Author @relation(fields: [authorId], references: [id])
   author   Author @relation(name: "AuthorHasBooks", fields: [authorId], references: [id])
 }
+
+generator docs {
+  provider = "node node_modules/prisma-docs-generator"
+  output = "../../docs"
+}
