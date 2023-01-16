@@ -2,4 +2,4 @@ const config = {
     NAME: 'Jackson Kasi',
 };
 
-module.exports = config;
+module.exports = config
