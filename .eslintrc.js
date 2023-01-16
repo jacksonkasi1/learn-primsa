@@ -1,20 +1,26 @@
 module.exports = {
-  env: {
-    commonjs: true,
-    es2021: true,
-    node: true,
-  },
-  overrides: [],
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
-  rules: {
-    'no-unused-vars': 'error',
-    'no-console': 'off',
-  },
-  extends: ['standard', 'prettier'],
-  plugins: ['prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
+    env: {
+        commonjs: true,
+        es2021: true,
+        node: true,
+    },
+    overrides: [],
+    parserOptions: {
+        ecmaVersion: 'latest',
+    },
+    rules: {
+        // 'no-console': 'error',
+        'no-unused-vars': 'error',
+        semi: ['error', 'always'],
+        quotes: ['error', 'single'],
+        eqeqeq: 'error',
+        'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 2 }],
+        indent: ['error', 4],
+        'no-trailing-spaces': 'error',
+        'no-undef': 'error',
+        'no-extra-semi': 'error',
+        // 'prettier/prettier': 'error',
+    },
+    extends: ['standard', 'prettier'],
+    plugins: ['prettier'],
 };

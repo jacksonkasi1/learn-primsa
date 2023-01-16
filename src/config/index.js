@@ -1,5 +1,5 @@
 const config = {
-  NAME: 'Jackson Kasi',
+    NAME: 'Jackson Kasi',
 };
 
 module.exports = config;

@@ -15,11 +15,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(
-  bodyParser.urlencoded({
-    limit: '50mb',
-    parameterLimit: 100000,
-    extended: true,
-  })
+    bodyParser.urlencoded({
+        limit: '50mb',
+        parameterLimit: 100000,
+        extended: true,
+    }),
 );
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
@@ -31,7 +31,7 @@ app.use(routes);
 app.use(errorHandler);
 
 const server = http.listen(PORT, () => {
-  console.log(`Server listening on ${PORT}`);
+    console.log(`Server listening on ${PORT}`);
 });
 
 module.exports = { server };
