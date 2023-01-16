@@ -9,4 +9,4 @@ console.error(ea);
 module.exports.getAllauthors = async () => {
     const allAuthors = await prisma.author.findMany();
     return allAuthors;
-}
+};

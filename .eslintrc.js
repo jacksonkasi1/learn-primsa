@@ -8,6 +8,8 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 'latest',
     },
+    extends: ['standard', 'prettier'],
+    plugins: ['prettier'],
     rules: {
         // 'no-console': 'error',
         'no-unused-vars': 'error',
@@ -21,6 +23,4 @@ module.exports = {
         'no-extra-semi': 'error',
         // 'prettier/prettier': 'error',
     },
-    extends: ['standard', 'prettier'],
-    plugins: ['prettier'],
 };
